@@ -1,4 +1,6 @@
-export const API_BASE_URL = window.API_BASE_URL || 'http://localhost:5000';
+import './config.js';
+
+export const API_BASE_URL = window.API_BASE_URL || '';
 
 export async function uploadFile(file) {
   const form = new FormData();
