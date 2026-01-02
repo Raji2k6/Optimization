@@ -11,7 +11,7 @@ from io import BytesIO
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import tensorflow as tf
-from optimization_engine import EnergyOptimizer
+from .optimization_engine import EnergyOptimizer
 from model.predict_usage import predict_with_cost
 
 app = Flask(__name__)
